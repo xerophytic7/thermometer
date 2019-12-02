@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'ThermoRecipes'),
     );
   }
 }
@@ -91,6 +92,55 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            GridView.count(
+              primary: false,
+              padding: const EdgeInsets.all(20),
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              crossAxisCount: 2,
+              children: <Widget>[
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  child: Stack(
+                    children: <Widget>[
+                      CachedNetworkImage(
+                        imageUrl: /*imgur link here*/,
+                        placeholder: (context, url) =>
+                            CircularProgressIndicator(),
+                        errorWidget: (context, url, error) => Icon(Icons.error),
+                      ),
+                      Text('He\'d have you all unravel at the'),
+                    ],
+                  ),
+                  color: Colors.teal[100],
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('Heed not the rabble'),
+                  color: Colors.teal[200],
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('Sound of screams but the'),
+                  color: Colors.teal[300],
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('Who scream'),
+                  color: Colors.teal[400],
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('Revolution is coming...'),
+                  color: Colors.teal[500],
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('Revolution, they...'),
+                  color: Colors.teal[600],
+                ),
+              ],
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
