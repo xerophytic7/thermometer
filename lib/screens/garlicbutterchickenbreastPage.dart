@@ -1,27 +1,22 @@
 import 'package:flutter/material.dart';
 
 
-
-class parmseanbakedchickenPage extends StatefulWidget {
-  parmseanbakedchickenPage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
+class garlicbutterchickenbreastPage extends StatefulWidget {
   @override
-  _parmseanbakedchickenPageState createState() => _parmseanbakedchickenPageState();
+  _garlicbutterchickenbreastPageState createState() => _garlicbutterchickenbreastPageState();
 }
 
-class _parmseanbakedchickenPageState extends State<parmseanbakedchickenPage> {
+class _garlicbutterchickenbreastPageState extends State<garlicbutterchickenbreastPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(widget.title),
+          title: Text("ThermoRecipes"),
         ),
         body: Column(
           children: <Widget>[
-            Text("Parmesan Baked Chicken",
+            Text("Garlic Butter Chicken Breast",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontFamily: 'Rokkitt', fontSize: 30.0)),
             Text("88",
@@ -37,49 +32,64 @@ class _parmseanbakedchickenPageState extends State<parmseanbakedchickenPage> {
                   Text(" Ingredients:",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 30.0)),
-                  Text("  -1 lb. skinless and boneless chicken breasts ",
+                  Text("  -Boneless Skinless Chicken Breast ",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
-                  Text("  -2 tablespoons olive oil",
+                  Text("  -kosher salt and freshly ground black pepper",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
-                  Text("  -1.5 tablespoons garlic powder",
+                  Text("  -4 tbsp butter — melted",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
-                  Text("  -2 tablespoons lemon juice",
+                  Text("  -2 cloves garlic",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
-                  Text("  -ground black pepper ",
+                  Text("  -1 tbsp. olive oil ",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
-                  Text("  -3 dashes cayenne pepper  ",
+                  Text("  -1 tablespoon fresh parsley  ",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
-                  Text("  -1/4 teaspoon salt or more to taste ",
+                  Text("  -1 teaspoon Italian seasoning ",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
-                  Text("  -1/2 cup freshly grated Parmesan cheese ",
+                  Text("  -1 teaspoon paprika ",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
                   Text(" Recipe:",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 30.0)),
-                  Text("  -Marinate the chicken breasts with olive oil, \n   garlic powder, lemon juice, black pepper, \n   cayenne pepper and salt. The marinade will be \n   paste-y and not liquidy, like the picture below. ",
+                  Text("  -Preheat oven to 400°F. ",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
                   Text(
-                      "  -While the chicken breasts are marinating, \n   preheat oven to 400F. ",
+                      "  -Season chicken breast with salt, pepper, \n   paprika and set aside.",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
                   Text(
-                      "  -Top the marinated chicken breasts with the \n   grated Parmesan cheese evenly. Bake the \n   chicken for about 20 minutes, until a meat \n   thermometer hits 165 degrees Fahrenheit when \n   inserted into the thickest part of the breasts. ",
+                      "  -In a small bowl mix together the butter, Italian \n   seasoning, parsley, and garlic. Set aside.",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
                   Text(
-                      "  -Remove the Parmesan baked chicken from the \n   oven. Serve immediately with fresh lemon \n   wedges, squeeze the juice on the chicken for \n   extra flavors. You may also serve the chicken \n   with your favorite hot sauce.",
+                      "  -In a cast iron skillet, heat olive oil over \n   medium heat.",
                       textAlign: TextAlign.left,
                       style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
-              
+                  Text(
+                      "  -When the skillet is really hot add chicken \n   breast. Sear until golden. It’s about 1-2 minutes \n   each side. ",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
+                  Text(
+                      "  -Pour garlic butter mixture over the chicken \n   breast.  ",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
+                  Text(
+                      "  -Place skillet in the oven and cook until cooked \n   through. It’s about 20-30 minutes or until \n   chicken breasts gets to an internal \n   temperature \n   of 165F.1 teaspoon Italian seasoning ",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
+                  Text(
+                      "  -Remove from the oven. Using a spoon, pour \n   some of the butter sauce left in \n   the skillet onto the chicken breast before \n   serving. ",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(fontFamily: 'Rokkitt', fontSize: 20.0)),
                 ]),
             )],
         ));

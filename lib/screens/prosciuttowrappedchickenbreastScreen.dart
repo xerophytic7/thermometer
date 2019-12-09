@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class prosciuttowrappedchickenbreastPage extends StatefulWidget {
-  prosciuttowrappedchickenbreastPage({Key key, this.title}) : super(key: key);
+  //prosciuttowrappedchickenbreastPage({Key key, this.title}) : super(key: key);
 
-  final String title;
+  //final String title;
 
   @override
   _prosciuttowrappedchickenbreastPageState createState() => _prosciuttowrappedchickenbreastPageState();
@@ -15,7 +15,7 @@ class _prosciuttowrappedchickenbreastPageState extends State<prosciuttowrappedch
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(widget.title),
+          title: Text("ThermoRecipes"),
         ),
         body: Column(
           children: <Widget>[

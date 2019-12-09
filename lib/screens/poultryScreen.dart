@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:thermometer/screens/garlicbutterchickenbreastPage.dart';
+import 'package:thermometer/screens/parmesanbakedchickenPage.dart';
+import 'package:thermometer/screens/prosciuttowrappedchickenbreastScreen.dart';
 //import 'screens/thermOnly.dart';
 
 class PoultryScreen extends StatefulWidget {
@@ -40,6 +43,7 @@ class _PoultryScreenState extends State<PoultryScreen> {
                 ),
                 onPressed: () {
                   //route to recipe and thermometer screen
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => garlicbutterchickenbreastPage()));
                 },
               ),),
               Padding(padding: EdgeInsets.fromLTRB(20, 20, MediaQuery.of(context).size.width*.05, 10),
@@ -56,6 +60,7 @@ class _PoultryScreenState extends State<PoultryScreen> {
                 ),
                 onPressed: () {
                   //route to recipe and thermometer screen
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => parmseanbakedchickenPage()));
                 },
               )),
               Padding(padding: EdgeInsets.fromLTRB(20, 20, MediaQuery.of(context).size.width*.05, 10),
@@ -72,6 +77,7 @@ class _PoultryScreenState extends State<PoultryScreen> {
                 ),
                 onPressed: () {
                   //route to recipe and thermometer screen
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => prosciuttowrappedchickenbreastPage()));
                 },
               )),
             ])
