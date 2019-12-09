@@ -49,6 +49,8 @@ flutter:
     - assets/pictures/sweetandsourpork.JPG
     - assets/pictures/butteredcod.JPG
     - assets/pictures/lemoncaperhalibut.JPG
+    - assets/pictures/chinesebroccolibeef.JPG
+    - assets/pictures/beefwellington.JPG
     - assets/fonts/Rokkitt-Black.TTF
 
   # An image asset can refer to one or more resolution-specific "variants", see
