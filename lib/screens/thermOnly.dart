@@ -62,11 +62,27 @@ class _ThermOnlyScreenState extends State<ThermOnlyScreen> {
                           print("entered if statement");
                           setState(() {
                             FlutterRingtonePlayer.playAlarm(looping: true);
-                            
-                          });
-                        }
-                      },
-                       
+                            showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                  title: Text('Target Temp Reached!'),
+                                  actions: <Widget>[
+                                    FlatButton(
+                                      child: Text("Stop Alarm"),
+                                      onPressed: () {
+                                        FlutterRingtonePlayer.stop();
+                                        Navigator.of(context).pop();
+                                      },
+                                    ),
+                                  ]   
+                              );
+                              },
+                            );
+                              }
+                            );
+                          }
+                        }, 
                       ),
                       //),
                   ),
@@ -96,10 +112,11 @@ class _ThermOnlyScreenState extends State<ThermOnlyScreen> {
                 child: Text('${targetTemp.toInt()}',
                     style: Theme.of(context).textTheme.display1),
               ),
-              Padding(padding: EdgeInsets.fromLTRB(0, 15, 0, 0),
+              Padding(padding: EdgeInsets.fromLTRB(0, 15, 0, 10),
               child:
               Text('Target Temp', style: TextStyle(fontSize: 16),),
               ),
+
         ],
       )),
     );
