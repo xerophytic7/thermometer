@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thermometer/screens/poultryScreen.dart';
 import 'screens/thermOnly.dart';
 
 void main() => runApp(MyApp());
@@ -137,6 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     onPressed: () {
                       //route to beef recipes screen
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => PoultryScreen()));
                     },
                   ),
                 ),
@@ -161,52 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ],
-            ),/*
-            GridView.count(
-              shrinkWrap: true,
-              primary: false,
-              padding: const EdgeInsets.all(20),
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-              crossAxisCount: 2,
-              children: <Widget>[
-                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: //Stack(
-                    //children: <Widget>[
-                      Image.asset('icons/beef.jpg'),
-                      //Text('Beef'),
-                   // ],
-                  //),
-                  color: Colors.teal[100],
-                ),
-                /*Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Heed not the rabble'),
-                  color: Colors.teal[200],
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Sound of screams but the'),
-                  color: Colors.teal[300],
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Who scream'),
-                  color: Colors.teal[400],
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Revolution is coming...'),
-                  color: Colors.teal[500],
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Revolution, they...'),
-                  color: Colors.teal[600],
-                ),*/
-              ],
-            ),*/
+            ),
           ],
       ),
       floatingActionButton: FloatingActionButton(
