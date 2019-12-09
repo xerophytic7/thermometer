@@ -47,6 +47,8 @@ flutter:
     - assets/pictures/recipe3.JPG
     - assets/pictures/honeygarlicpork.JPG
     - assets/pictures/sweetandsourpork.JPG
+    - assets/pictures/butteredcod.JPG
+    - assets/pictures/lemoncaperhalibut.JPG
     - assets/fonts/Rokkitt-Black.TTF
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -84,4 +86,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-
