@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:thermometer/screens/beefscreen.dart';
+import 'package:thermometer/screens/porkscreen.dart';
+import 'package:thermometer/screens/poultryScreen.dart';
+import 'package:thermometer/screens/fishscreen.dart';
 import 'screens/thermOnly.dart';
 
 void main() => runApp(MyApp());
@@ -79,6 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     onPressed: () {
                       //route to beef recipes screen
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => BeefScreen()));
                     },
                   ),
                 ),
@@ -99,6 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     onPressed: () {
                       //route to pork recipes screen
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => PorkScreen()));
                     },
                   ),
                 ),
@@ -124,7 +130,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                     onPressed: () {
-                      //route to beef recipes screen
+                      //route to poultry recipes screen
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => PoultryScreen()));
                     },
                   ),
                 ),
@@ -144,7 +151,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                     onPressed: () {
-                      //route to pork recipes screen
+                      //route to fish recipes screen
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => FishScreen()));
                     },
                   ),
                 ),
