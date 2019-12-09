@@ -7,6 +7,8 @@ class ThermOnlyScreen extends StatefulWidget {
 }
 
 class _ThermOnlyScreenState extends State<ThermOnlyScreen> {
+
+
   double targetTemp = 130.0;
   TextEditingController curTempCtrl = TextEditingController();
   int bleu = 120;
@@ -29,6 +31,8 @@ class _ThermOnlyScreenState extends State<ThermOnlyScreen> {
 
   @override
   Widget build(BuildContext context) {
+    
+
     if(curTempCtrl.text == "" || curTempCtrl.text == null ) {curTempCtrl.text = '0'; } 
     //Start of page
     return Scaffold(
