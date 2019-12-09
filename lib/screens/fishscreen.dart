@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-class beefscreen extends StatefulWidget {
+class FishScreen extends StatefulWidget {
   @override
-  _beefscreenState createState() => _beefscreenState();
+  _FishScreenState createState() => _FishScreenState();
 }
 
-class _beefscreenState extends State<beefscreen> {
+class _FishScreenState extends State<FishScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(centerTitle: true,
-        title: Text("Beef Screen"),
+        title: Text("Fish Screen"),
       ),
       body: Center(
         child: ListView(
           children: <Widget>[
-            Text("Beef", textAlign: TextAlign.center,  style: TextStyle(fontFamily: 'Rokkitt',  fontSize: 30.0)),
+            Text("Fish", textAlign: TextAlign.center,  style: TextStyle(fontFamily: 'Rokkitt',  fontSize: 30.0)),
              Wrap(direction: Axis.horizontal, children: <Widget>[
               Padding(padding: EdgeInsets.fromLTRB(20, 20, MediaQuery.of(context).size.width*.05, 10),
               child:
@@ -22,10 +22,10 @@ class _beefscreenState extends State<beefscreen> {
                 color: Colors.white,
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/pictures/chinesebroccolibeef.JPG',
+                    Image.asset('assets/pictures/butteredcod.JPG',
                         width: 125, height: 125),
                     Wrap(direction: Axis.vertical, children:[
-                    Text("Chinese Broccoli\nBeef", textAlign: TextAlign.center),
+                    Text("Buttered \nCod", textAlign: TextAlign.center),
                   ],)],
                 ),
                 onPressed: () {
@@ -38,10 +38,10 @@ class _beefscreenState extends State<beefscreen> {
                 color: Colors.white,
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/pictures/beefwellington.JPG',
+                    Image.asset('assets/pictures/lemoncaperhalibut.JPG',
                         width: 125, height: 125),
                         Wrap(direction: Axis.horizontal, children:[
-                    Text("Beef Wellington", textAlign: TextAlign.center,),
+                    Text("Lemon Caper\nHalibut", textAlign: TextAlign.center,),
                   ],)],
                 ),
                 onPressed: () {

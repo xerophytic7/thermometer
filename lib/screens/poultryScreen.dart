@@ -67,7 +67,7 @@ class _PoultryScreenState extends State<PoultryScreen> {
                     Image.asset('assets/pictures/recipe3.JPG',
                         width: 125, height: 125),
                         Wrap(direction: Axis.horizontal, children:[
-                    Text("Prosciutto Wrapped\nChicken Breast", textAlign: TextAlign.center,),
+                    Text("Prosciutto \nWrapped\nChicken Breast", textAlign: TextAlign.center,),
                   ],)],
                 ),
                 onPressed: () {

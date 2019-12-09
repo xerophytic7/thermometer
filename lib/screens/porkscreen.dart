@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-class porkscreen extends StatefulWidget {
+class PorkScreen extends StatefulWidget {
   @override
-  _porkscreenState createState() => _porkscreenState();
+  _PorkScreenState createState() => _PorkScreenState();
 }
 
-class _porkscreenState extends State<porkscreen> {
+class _PorkScreenState extends State<PorkScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
