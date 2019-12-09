@@ -19,12 +19,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_ringtone_player: ^1.0.3
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
+  cached_network_image: ^1.1.2+1
   flutter_test:
     sdk: flutter
 
@@ -52,6 +54,8 @@ flutter:
     - assets/pictures/chinesebroccolibeef.JPG
     - assets/pictures/beefwellington.JPG
     - assets/fonts/Rokkitt-Black.TTF
+    - assets/icons/
+    - assets/pictures/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
